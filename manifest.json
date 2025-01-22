@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "Naver Hanja Dictionary Access",
+  "version": "1.0",
+  "permissions": ["activeTab", "scripting"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "host_permissions": ["https://ac-dict.naver.com/ccko/ac*"],
+  "content_scripts": [
+    {
+      "matches": ["https://namu.wiki/*"],
+      "js": ["content.js"]
+    }
+  ]
+}
