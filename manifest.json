@@ -9,7 +9,7 @@
   "host_permissions": ["https://ac-dict.naver.com/ccko/ac*"],
   "content_scripts": [
     {
-      "matches": ["https://namu.wiki/*"],
+      "matches": ["<all_urls>"],
       "js": ["content.js"]
     }
   ]
